@@ -134,6 +134,15 @@ section.closing{background:var(--ink);border-bottom:0;padding-block:72px}
 .gloss{display:block;color:var(--muted);font-size:.82rem}
 .hero h1{font-weight:400;letter-spacing:.01em}
 h2{font-weight:400}
+.rank-sum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.rank-sum .card{display:grid;gap:4px}
+.rank-sum b{font-size:1.9rem;font-weight:600;line-height:1.2}
+.rank-sum span{color:var(--muted);font-size:.9rem}
+table.rank-tbl{min-width:560px}
+td.rk{font-family:var(--f-data);font-variant-numeric:tabular-nums;font-weight:600}
+td.rk.na{color:var(--bad);font-family:var(--f-body);font-weight:500;font-size:.85rem}
+.t-drop{background:var(--bad-bg);color:var(--bad)}
+@media (max-width:820px){.rank-sum{grid-template-columns:1fr}}
 footer{padding-block:40px;color:var(--muted);font-size:.88rem}
 
 @media (max-width:820px){
@@ -176,8 +185,81 @@ footer{padding-block:40px;color:var(--muted);font-size:.88rem}
   </div>
 </section>
 
-<!-- FOR / AGAINST -->
+<!-- RANKINGS -->
 <section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="k">Keyword rankings</span>
+      <h2>Where the site ranked, and where it ranks now</h2>
+      <p>Google positions for 52 keywords the site ranked for before the shutdown, compared with today.</p>
+    </div>
+    <div class="rank-sum">
+      <div class="card"><b class="num">39 → 3</b><span>keywords in the top 3</span></div>
+      <div class="card"><b class="num">47 → 7</b><span>keywords on page one (top 10)</span></div>
+      <div class="card"><b class="num">40</b><span>keywords no longer ranking</span></div>
+    </div>
+    <div class="tbl" style="margin-top:22px"><table class="rank-tbl">
+      <thead><tr><th>Keyword</th><th style="width:14%">Before</th><th style="width:16%">Now</th><th style="width:18%">Status</th></tr></thead>
+      <tbody>
+          <tr><td><span class="ar">المنازل الذكية</span></td><td class="rk">1</td><td class="rk">1</td><td><span class="tag t-new">Holding</span></td></tr>
+          <tr><td><span class="ar">الطراز الاسلامي والتصميم الداخلي</span></td><td class="rk">1</td><td class="rk">1</td><td><span class="tag t-new">Holding</span></td></tr>
+          <tr><td><span class="ar">الفن العربي والتصميم الداخلي</span></td><td class="rk">1</td><td class="rk">5</td><td><span class="tag t-upd">Down 4</span></td></tr>
+          <tr><td><span class="ar">أنواع التصميم الداخلي</span></td><td class="rk">1</td><td class="rk">6</td><td><span class="tag t-upd">Down 5</span></td></tr>
+          <tr><td><span class="ar">التصميم الداخلي</span></td><td class="rk">1</td><td class="rk">8</td><td><span class="tag t-upd">Down 7</span></td></tr>
+          <tr><td>Interior design consultation</td><td class="rk">1</td><td class="rk">36</td><td><span class="tag t-upd">Down 35</span></td></tr>
+          <tr><td>Design firms in dubai</td><td class="rk">1</td><td class="rk">39</td><td><span class="tag t-upd">Down 38</span></td></tr>
+          <tr><td><span class="ar">أساسيات التصميم الداخلي</span></td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Interior design uae</td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Interior Design Considerations</td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Institutional interior design</td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Apartment interior decor</td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Apartment interior design</td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Villa interior design in dubai</td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Master bedroom interior design</td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Industrial Interior Design</td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Neoclassical interior design</td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Modern Classic Interior Design</td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Interior design companies in sharjah</td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Bedroom interior ceiling design</td><td class="rk">1</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td><span class="ar">المنزل الذكي</span></td><td class="rk">2</td><td class="rk">2</td><td><span class="tag t-new">Holding</span></td></tr>
+          <tr><td>Luxury interior design services</td><td class="rk">2</td><td class="rk">25</td><td><span class="tag t-upd">Down 23</span></td></tr>
+          <tr><td><span class="ar">شركات تصميم داخلي في الإمارات</span></td><td class="rk">2</td><td class="rk">29</td><td><span class="tag t-upd">Down 27</span></td></tr>
+          <tr><td>Sustainable House Design</td><td class="rk">2</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Classic home interior decoration</td><td class="rk">2</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Hospitality Interior Design</td><td class="rk">2</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Modern Kitchen Renovation</td><td class="rk">2</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Commercial interior design</td><td class="rk">2</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Bohemian Interior Design</td><td class="rk">2</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Modern Bedroom Interior Design</td><td class="rk">2</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Salon interior design ideas</td><td class="rk">2</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td><span class="ar">تصميم صالون نسائي</span></td><td class="rk">2</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Home Decorating Tips</td><td class="rk">2</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Grand interior design</td><td class="rk">3</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Dubai villa interior design</td><td class="rk">3</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Bathroom Renovation company</td><td class="rk">3</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Villa interior design</td><td class="rk">3</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Arabic majlis interior design</td><td class="rk">3</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td><span class="ar">شركة تنفيذ داخلي</span></td><td class="rk">3</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td><span class="ar">عالم التصميم الداخلي</span></td><td class="rk">4</td><td class="rk">10</td><td><span class="tag t-upd">Down 6</span></td></tr>
+          <tr><td>Exterior Designers</td><td class="rk">4</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Garden Design in Dubai</td><td class="rk">4</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Salon Interior Design</td><td class="rk">5</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td><span class="ar">شركات تصميم داخلي في دبي</span></td><td class="rk">6</td><td class="rk">22</td><td><span class="tag t-upd">Down 16</span></td></tr>
+          <tr><td>Best Interior Fit Out Company</td><td class="rk">8</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Modern Ramadan Decoration</td><td class="rk">10</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Eid Decoration</td><td class="rk">10</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Interior Design Steps</td><td class="rk">32</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Majlis Design</td><td class="rk">40</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Best architecture firms in dubai</td><td class="rk">56</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Restaurant interior design</td><td class="rk">77</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+          <tr><td>Office interior design</td><td class="rk">101</td><td class="rk na">Not ranking</td><td><span class="tag t-drop">Dropped out</span></td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<!-- FOR / AGAINST -->
+<section>
   <div class="wrap">
     <div class="sec-head">
       <span class="k">Starting point</span>
@@ -205,7 +287,7 @@ footer{padding-block:40px;color:var(--muted);font-size:.88rem}
 </section>
 
 <!-- PLAN -->
-<section>
+<section class="alt">
   <div class="wrap">
     <div class="sec-head">
       <span class="k">What we will do</span>
@@ -228,7 +310,7 @@ footer{padding-block:40px;color:var(--muted);font-size:.88rem}
 </section>
 
 <!-- KEYWORDS -->
-<section class="alt">
+<section>
   <div class="wrap">
     <div class="sec-head">
       <span class="k">What your clients search for</span>
@@ -257,7 +339,7 @@ footer{padding-block:40px;color:var(--muted);font-size:.88rem}
 </section>
 
 <!-- CONTENT -->
-<section>
+<section class="alt">
   <div class="wrap">
     <div class="sec-head">
       <span class="k">Content</span>
